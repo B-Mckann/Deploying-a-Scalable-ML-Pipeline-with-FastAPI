@@ -22,7 +22,7 @@ def train_model(X_train, y_train):
     """
     # TODO: implement the function
     #use random forest classifier with default parameters
-    model = RandomForestClassifier(random_state=7)
+    model = RandomForestClassifier(random_state = 7)
     model.fit(X_train, y_train)
     return model
     
