@@ -1,5 +1,5 @@
 name: Python CI
-
+## workflow triggered on push to main branch.
 on:
   push:
     branches: [main]
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.13.5"] 
+        python-version: ["3.13"] 
 
     steps:
     - uses: actions/checkout@v2
