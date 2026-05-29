@@ -18,15 +18,15 @@ def test_one_model_returns_randomforest():
 
 def test_two_compute_model_metrics():
     """
-    Tests that compute_model_metrics returns precision, recall, and f1
+    Tests that compute_model_metrics returns precision, recall, and fb
     values given known labels and predictions.
     """
     y = np.array([0, 1, 0, 1])
     preds = np.array([0, 1, 0, 0])
-    precision, recall, f1 = compute_model_metrics(y, preds)
+    precision, recall, fb = compute_model_metrics(y, preds)
     assert precision == pytest.approx(1.0,abs=1e-4)
-    assert recall == pytest.approx(0.6667,abs=1e-4)
-    assert f1 == pytest.approx(0.8,abs=1e-4)
+    assert recall == pytest.approx(0.5,abs=1e-4)
+    assert fb == pytest.approx(0.8,abs=1e-4)
     pass
 
 
