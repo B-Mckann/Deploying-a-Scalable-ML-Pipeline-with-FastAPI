@@ -6,7 +6,7 @@ from ml.model import train_model, compute_model_metrics, inference
 def test_one_model_returns_randomforest():
     """
     Tests that train_model returns a RandomForestClassifier 
-    instance, confirming the expected model type is being used.
+    instance, confirming the expected model type.
     """
     X_train = np.array([[1,2],[3,4],[5,6],[7,8]])
     y_train = np.array([0, 1, 0, 1])
