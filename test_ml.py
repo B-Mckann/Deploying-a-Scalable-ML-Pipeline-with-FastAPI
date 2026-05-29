@@ -26,7 +26,7 @@ def test_two_compute_model_metrics():
     precision, recall, f1 = compute_model_metrics(y, preds)
     assert precision == pytest.approx(1.0,abs=1e-4)
     assert recall == pytest.approx(0.6667,abs=1e-4)
-    assert fbeta == pytest.approx(0.8,abs=1e-4)
+    assert f1 == pytest.approx(0.8,abs=1e-4)
     pass
 
 
