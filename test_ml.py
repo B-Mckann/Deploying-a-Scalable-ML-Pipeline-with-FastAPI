@@ -26,9 +26,8 @@ def test_two_compute_model_metrics():
     precision, recall, fb = compute_model_metrics(y, preds)
     assert precision == pytest.approx(1.0,abs=1e-4)
     assert recall == pytest.approx(0.5,abs=1e-4)
-    assert fb == pytest.approx(0.8,abs=1e-4)
+    assert fb == pytest.approx(0.6667,abs=1e-4)
     pass
-
 
 
 def test_three_inference_returns_np_array():
